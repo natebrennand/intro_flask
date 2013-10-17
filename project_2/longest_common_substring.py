@@ -11,7 +11,7 @@ def longest_common_substring(str1, str2):
     pass
 
 
-@app.route('/lcs', methods=['POST'])
+@app.route('/lcs', methods=['GET'])
 def lcs():
     pass
 

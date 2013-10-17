@@ -36,11 +36,11 @@ class HelloTestCase(unittest.TestCase):
 
     def test_api_call(self):
         err_msg = "API call returning wrong substring"
-        json = json.dumps({
+        resp_json = json.dumps({
             'string1': 'abc',
             'string2': 'abc'
         })
-        resp = self.app.post('/lcs', data=json)
+        resp = self.app.get('/lcs', data=resp_json)
         answer = json.loads(resp.data)['longest_common_substring']
         self.assertEqual(answer, 'abc', err_msg)
 

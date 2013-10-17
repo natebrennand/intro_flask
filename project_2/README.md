@@ -6,8 +6,13 @@
 Write a flask app in `longest_common_subtring.py`.
 This app should simply return the longest common substring of the two strings passed in.
 
-The API call should accept the data as a JSON and return the data as a JSON.
-Look up how to switch between Python dictionaries and JSON [with the json library](http://pymotw.com/2/json/).
+- The API call should accept a GET request to the url '/lcs'.
+- Data should be passed in as a JSON and return the data as a JSON.
+
+####JSON
+
+- [Look up how to access the data in an HTTP request with Flask.](http://stackoverflow.com/questions/14112336/flask-request-and-application-json-content-type)
+- Look up how to switch between Python dictionaries and JSON [with the json library](http://pymotw.com/2/json/).
 
 ```javascript
 input = {

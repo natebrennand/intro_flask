@@ -17,7 +17,7 @@ def longest_common_substring(s1, s2):
     return lcs
 
 
-@app.route('/lcs', methods=['POST'])
+@app.route('/lcs')
 def lcs():
     data = json.loads(request.data)
     string1 = data['string1']
